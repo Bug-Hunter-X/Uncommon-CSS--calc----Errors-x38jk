@@ -1,0 +1,17 @@
+/* Corrected CSS - bugSolution.css */
+
+.container {
+  width: calc(100% - 30px);
+  /* Correct: Combined calculations into a single expression */
+}
+
+.element {
+  padding: calc(10px + 5%);
+  /* Correct: Use of compatible units only if possible, otherwise separate calculations*/
+  margin: calc(10px + 20px); /* Correct: Added space around the `+` operator */
+}
+
+.nested {
+  height: calc(50vh - 20px);
+  /* Correct: Simplified nested calc() expressions.  If you require nested expressions make sure to use correct parenthesis*/
+}
